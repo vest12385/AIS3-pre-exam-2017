@@ -1,0 +1,2 @@
+
+ncat -ve ./pwn1.bin -kl 8888

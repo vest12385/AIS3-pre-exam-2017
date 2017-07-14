@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	int val1 = ?????????, val2 = ?????????, val3 = ???????, val4 = ??????, i, *ptr;
+	char flag[29] = "????????????????????????????"; // Hint: The flag begins with AIS3
+	
+	for(i = 0, ptr = (int*)flag ; i < 7 ; ++i)
+		printf("%d\n", ptr[i] ^ val1 ^ val2 ^ val3 ^ val4);
+	
+	/*
+	964600246 = 861096257 ^ 170780919
+	1376627084 = 1478508923 AIS3{A XOR B XOR A EQUALS B}
+	1208859320 = 1109414479
+	1482862807 = 1380931616
+	1326295511 = 1159741728
+	1181531558 = 1279350097
+	2003814564 = 2101485651
+	*/
+	
+	return 0;
+}
